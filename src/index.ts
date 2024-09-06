@@ -112,13 +112,13 @@
 // };
 
 // // Type Assertion ('as' keyword => telling complier we know about the type of the variable)
-// // let phone = document.getElementById("phone") as HTMLInputElement; // or
+// let phone = document.getElementById("phone") as HTMLInputElement; // or
 // let phone = <HTMLInputElement>document.getElementById("phone");
 // console.log(phone.value);
 
 // // Unknown Type
 // function flyCar(document: unknown): void {
-//   // type narrowing
+//   // type narrowing from any
 //   // We have to narrow down to a specific type before we can perform any operations on an unknown type.
 //   if (typeof document === "string") {
 //     document.toLowerCase();
@@ -132,7 +132,7 @@
 //   //   document.fly();
 // }
 
-// // never type
+// // never type //runs continuously
 // function processEvents(): never {
 //   while (true) {
 //     // Read a message from a queque

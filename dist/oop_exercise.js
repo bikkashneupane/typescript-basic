@@ -7,7 +7,7 @@ class Logger {
         console.log("Writing to File...");
     }
 }
-class Person {
+class People {
     constructor(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,7 +16,7 @@ class Person {
         return this.firstName + " " + this.lastName;
     }
 }
-class Employee extends Person {
+class Employee extends People {
     constructor(firstName, lastName, salary) {
         super(firstName, lastName);
         this.salary = salary;

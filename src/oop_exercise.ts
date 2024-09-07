@@ -10,7 +10,7 @@ class Logger {
   }
 }
 
-class Person {
+class People {
   constructor(public firstName: string, public lastName: string) {}
 
   get fullName() {
@@ -18,7 +18,7 @@ class Person {
   }
 }
 
-class Employee extends Person {
+class Employee extends People {
   constructor(firstName: string, lastName: string, public salary: number) {
     super(firstName, lastName);
   }
